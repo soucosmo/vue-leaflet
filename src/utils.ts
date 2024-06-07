@@ -98,9 +98,9 @@ export const remapEvents = (contextAttrs: Data): ListenersAndAttrs => {
 
 export const resetWebpackIcon = async (Icon) => {
   const modules = await Promise.all([
-    import("leaflet/dist/images/marker-icon-2x.png"),
-    import("leaflet/dist/images/marker-icon.png"),
-    import("leaflet/dist/images/marker-shadow.png"),
+    import("leaflet/dist/images/marker-icon-2x.webp"),
+    import("leaflet/dist/images/marker-icon.webp"),
+    import("leaflet/dist/images/marker-shadow.webp"),
   ]);
 
   delete Icon.Default.prototype._getIconUrl;
